@@ -1,0 +1,73 @@
+.tooltip {
+    display: none;
+    background-color: #E8EDFF;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+    font-size: 10px;
+}
+
+.tooltip.show {
+    display: block;
+}
+
+#chart {
+    background: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+text {
+    pointer-events: none;
+}
+
+.menu text {
+    font-weight: bold;
+}
+
+rect {
+    /*fill: none;*/
+    stroke: #fff;
+}
+
+rect.parent,
+.menu rect {
+    stroke-width: 2px;
+}
+
+rect.parent {
+    pointer-events: none;
+}
+
+.menu rect {
+    fill: #5C76F5;
+}
+
+.menu:hover rect {
+    fill: #526EF5;
+}
+
+.children rect.parent,
+.menu rect {
+    cursor: pointer;
+}
+
+.children rect.parent {
+    fill: #bbb;
+    fill-opacity: .5;
+}
+
+.children rect.child {
+    stroke: white !important;
+}
